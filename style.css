@@ -24,6 +24,14 @@ ul {
 
 ul li {
 	list-style: none;
+	/*text-decoration: none;
+	position: relative;
+	display: block;
+	margin: 10px 0;
+	font-size: 4em;
+	font-weight: bold;
+	color: #fff;
+	transition: 0.2s;*/
 }
 
 ul li a {
@@ -47,11 +55,11 @@ ul li a:hover {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background:  #fff;
+	background:   #B026FF;
 	transition: 0.1s;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
-	mix-blend-mode: difference;
+	mix-blend-mode: darken;
 }
 
 ul li:hover ~ .cursor {
@@ -60,3 +68,12 @@ ul li:hover ~ .cursor {
 }
 
 /* ----------------------------- HOME -------------------------------- */
+
+#home, #about, #portfolio, #contact {
+	color: #fff;
+}
+
+.text-purple {
+	color: #B026FF;
+	font-weight: bold;
+}

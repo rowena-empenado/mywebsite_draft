@@ -27,30 +27,119 @@
 
 	<body>
 
-		<!---------------------------- LANDING PAGE ------------------>
+		<!---------------------------- LANDING PAGE START ----------------------->
 		
-				<section id="landing">
+				<div id="landing" style="display: block;" class="">
 			    	<ul>
-			    		<li> <a href="#home">  HOME  </a> </li>
-			    		<li> <a href="#about"> ABOUT  </a> </li>
-			    		<li> <a href="#portfolio"> PORTFOLIO </a> </li>
-			    		<li> <a href="#contact"> CONTACT </a> </li>
+			    		<li> <a href="#" onclick="showHomeOnly()"> HOME </a> </li>
+			    		<li> <a href="#" onclick="showAboutOnly()"> ABOUT  </a> </li>
+			    		<li> <a href="#" onclick="showPortfolioOnly()"> PORTFOLIO </a> </li>
+			    		<li> <a href="#" onclick="showContactOnly()"> CONTACT </a> </li>
 			    		<div class="cursor">  </div>
 			    	</ul>   
-		    	</section>
-		    
-		
-			<script>
-				const cursor = document.querySelector('.cursor');
-				document.addEventListener('mousemove', (e) => {
-					cursor.style.left = e.clientX + 'px';
-					cursor.style.top = e.clientY + 'px';
-				})
-			</script>
+		    	</div>
 
-		<!-- JS Dependencies -->
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+		<!---------------------------- LANDING PAGE END --------------------------->
+
+
+		<!--------------------------------- HOME START -------------------------------->
+		
+				<div id="home" style="display: none;">
+			    	<h1> Hi there! </h1> 
+			    	<h3> My name is <span class="text-purple"> Weng </span> and welcome to my site. </h3>
+			    	<button onclick="showLandingOnly()"> HOME </button>
+		    	</div>
+
+		<!--------------------------------- HOME END ------------------------------------->
+
+
+		<!--------------------------------- ABOUT START -------------------------------->
+		
+				<div id="about" style="display: none;">
+			    	<h1> ABOUT ME </h1> 
+			    	<p> My name is <span class="text-purple"> Ma. Rowena Empenado</span> . I'm a Full Stack Web Developer. </p>
+			    	<button onclick="showLandingOnly()"> HOME </button>
+		    	</div>
+
+		<!--------------------------------- ABOUT END ------------------------------------->
+
+
+		<!--------------------------------- PORTFOLIO START --------------------------->
+		
+				<div id="portfolio" style="display: none;">
+			    	<h1> My Work </h1> 
+			    	<p>
+			    		Here's a list of projects that I've worked on since I started my journey as a <span class="text-purple"> Full Stack Web Developer </span> .
+			    	</p>
+			    	<button onclick="showLandingOnly()"> HOME </button>
+		    	</div>
+
+		<!--------------------------------- PORTFOLIO END ------------------------------>
+
+		
+		<!--------------------------------- CONTACT START ------------------------------>
+		
+				<div id="contact" style="display: none;">
+			    	<h1> Get in touch </h1> 
+			    	<p>
+						If you have any questions, please feel free to drop me an email. If you don't get an answer immediately, I might just be spending quality time with my family. <br>I'll get back to you as soon as I can. That's a promise!
+			    	</p>
+			    	<button onclick="showLandingOnly()"> HOME </button>
+		    	</div>  
+
+		<!--------------------------------- CONTACT END ---------------------------------->  	
+		
+	<script>
+		const cursor = document.querySelector('.cursor');
+		document.addEventListener('mousemove', (e) => {
+			cursor.style.left = e.clientX + 'px';
+			cursor.style.top = e.clientY + 'px';
+		})
+
+		function showHomeOnly() {
+			document.getElementById("landing").style.display = "none";
+		  	document.getElementById("home").style.display = "block";
+		  	document.getElementById("about").style.display = "none";
+		  	document.getElementById("portfolio").style.display = "none";
+		  	document.getElementById("contact").style.display = "none";
+		}
+
+		function showAboutOnly() {
+			document.getElementById("landing").style.display = "none";
+		  	document.getElementById("home").style.display = "none";
+		  	document.getElementById("about").style.display = "block";
+		  	document.getElementById("portfolio").style.display = "none";
+		  	document.getElementById("contact").style.display = "none";
+		}
+
+		function showPortfolioOnly() {
+			document.getElementById("landing").style.display = "none";
+		  	document.getElementById("home").style.display = "none";
+		  	document.getElementById("about").style.display = "none";
+		  	document.getElementById("portfolio").style.display = "block";
+		  	document.getElementById("contact").style.display = "none";
+		}
+
+		function showContactOnly() {
+			document.getElementById("landing").style.display = "none";
+		  	document.getElementById("home").style.display = "none";
+		  	document.getElementById("about").style.display = "none";
+		  	document.getElementById("portfolio").style.display = "none";
+		  	document.getElementById("contact").style.display = "block";
+		}
+
+		function showLandingOnly() {
+		  document.getElementById("landing").style.display = "block";
+		  document.getElementById("home").style.display = "none";
+		  document.getElementById("about").style.display = "none";
+		  document.getElementById("portfolio").style.display = "none";
+		  document.getElementById("contact").style.display = "none";
+		}
+	</script>
+
+	<!-- JS Dependencies -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
 	</body>
 </html>
