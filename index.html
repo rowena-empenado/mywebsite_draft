@@ -29,7 +29,7 @@
 
 		<!---------------------------- LANDING PAGE START ----------------------->
 		
-				<div id="landing" style="display: block;" class="">
+				<div id="landing" style="display: flex;" class="">
 			    	<ul>
 			    		<li> <a href="#" onclick="showHomeOnly()"> HOME </a> </li>
 			    		<li> <a href="#" onclick="showAboutOnly()"> ABOUT  </a> </li>
@@ -44,10 +44,37 @@
 
 		<!--------------------------------- HOME START -------------------------------->
 		
-				<div id="home" style="display: none;">
-			    	<h1> Hi there! </h1> 
-			    	<h3> My name is <span class="text-purple"> Weng </span> and welcome to my site. </h3>
-			    	<button onclick="showLandingOnly()"> HOME </button>
+				<div id="home" class="" style="display: none;">
+
+						<!-- Side Bar -->
+							<div class="sidenav">
+									<a href="#" onclick="showLandingOnly()"> <i class="fas fa-home text-purple p-2"></i> </a>
+									<a href="#" onclick="showAboutOnly()"> <i class="fas fa-user-circle p-2"></i>  </a> 
+									<a href="#" onclick="showPortfolioOnly()"> <i class="fas fa-folder-open p-2"></i> </a> 
+									<a href="#" onclick="showContactOnly()"> <i class="fas fa-envelope p-2"></i> </a> 
+							</div>
+						<!-- Side Bar -->
+
+						<!-- Main Content -->
+							<div class="content">
+								<h1> Hi there! </h1> 
+								<h3> My name is <span class="text-purple"> Weng </span> and welcome to my site. </h3>
+								<p> </p>
+								<h3> Here's a simple gift to inspire your mind and and heart: </h3>
+								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h3 class="text-center "> <i class="fas fa-gift text-purple"></i> <h3>
+								<h3> Feel free to roam around through the icons on the left side. </h3>
+								<h3> I hope you enjoy your time. </h3>
+								<h1> Cheers! </h1>
+								<div class="back"> <img class="home-ok" src="./images/home-ok.png"></div>
+							</div>
+						<!-- Main Content -->
+
 		    	</div>
 
 		<!--------------------------------- HOME END ------------------------------------->
@@ -56,9 +83,52 @@
 		<!--------------------------------- ABOUT START -------------------------------->
 		
 				<div id="about" style="display: none;">
-			    	<h1> ABOUT ME </h1> 
-			    	<p> My name is <span class="text-purple"> Ma. Rowena Empenado</span> . I'm a Full Stack Web Developer. </p>
-			    	<button onclick="showLandingOnly()"> HOME </button>
+
+						<!-- Side Bar -->
+							<div class="sidenav">
+									<a href="#" onclick="showLandingOnly()"> <i class="fas fa-home p-2"></i> </a>
+									<a href="#" onclick="showAboutOnly()"> <i class="fas fa-user-circle text-purple p-2"></i>  </a> 
+									<a href="#" onclick="showPortfolioOnly()"> <i class="fas fa-folder-open p-2"></i> </a> 
+									<a href="#" onclick="showContactOnly()"> <i class="fas fa-envelope p-2"></i> </a> 
+							</div>
+						<!-- Side Bar -->
+
+						<!-- Main Content -->
+							<div class="content">
+								<h1 class="text-center text-purple"> ABOUT ME </h1> 
+
+						    	<!-- Slideshow container -->
+						    	<div class="about-pics">
+							    	  <div class="mySlides fade">
+							    	    <img class="about-img" src="./images/about1.png">
+							    	  </div>
+							    	  <div class="mySlides fade">
+							    	    <img class="about-img" src="./images/about2.png">
+							    	  </div>
+							    	  <div class="mySlides fade">
+							    	    <img class="about-img" src="./images/nomakeup1.jpg">
+							    	  </div>
+							    	  <div class="mySlides fade">
+							    	    <img class="about-img" src="./images/nomakeup2.jpg">
+							    	  </div>
+							    	  <div class="mySlides fade">
+							    	    <img class="about-img" src="./images/makeup.jpg">
+							    	  </div>
+							    	  <div class="mySlides fade">
+							    	    <img class="about-img" src="./images/makeup3.jpg">
+							    	  </div>
+						    	</div>
+
+								<h3> My name is <span class="text-purple"> Ma. Rowena Empenado</span> . I'm a Full Stack Web Developer based in Las Piñas, Philippines. </h3>
+								<h4> I have about 8 years of work experience (corporate and freelance) in various fields such as CCTV design, software testing, stocks and forex trading, leads generation, data analysis, trade surveillance, etc. </h4>
+								<h4> I have decided to shift career and pursue Full Stack Web Development since January 2022. I took Zuitt's Web Development Bootcamp to help me transition with ease. </h4>
+								<h4> After graduation, I now have these skills in my arsenal:</h4>
+								<div class="core-skills"></div>
+								<div class="other-tools"></div>
+								<h4> You can also check my portfolio to see my progress as a Full Stack Web Developr. </h4>
+							</div>
+						<!-- Main Content -->
+
 		    	</div>
 
 		<!--------------------------------- ABOUT END ------------------------------------->
@@ -67,12 +137,27 @@
 		<!--------------------------------- PORTFOLIO START --------------------------->
 		
 				<div id="portfolio" style="display: none;">
-			    	<h1> My Work </h1> 
-			    	<p>
-			    		Here's a list of projects that I've worked on since I started my journey as a <span class="text-purple"> Full Stack Web Developer </span> .
-			    	</p>
-			    	<button onclick="showLandingOnly()"> HOME </button>
-		    	</div>
+
+						<!-- Side Bar -->
+							<div class="sidenav">
+									<a href="#" onclick="showLandingOnly()"> <i class="fas fa-home p-2"></i> </a>
+									<a href="#" onclick="showAboutOnly()"> <i class="fas fa-user-circle p-2"></i>  </a> 
+									<a href="#" onclick="showPortfolioOnly()"> <i class="fas fa-folder-open text-purple p-2"></i> </a> 
+									<a href="#" onclick="showContactOnly()"> <i class="fas fa-envelope p-2"></i> </a> 
+							</div>
+						<!-- Side Bar -->
+
+						<!-- Main Content -->
+							<div class="content">
+
+							    	<h1> My Work </h1> 
+							    	<p>
+							    		Here's a list of projects that I've worked on since I started my journey as a <span class="text-purple"> Full Stack Web Developer </span> .
+							    	</p>
+			    	
+		    				</div>
+		    			<!-- Main Content -->
+
 
 		<!--------------------------------- PORTFOLIO END ------------------------------>
 
@@ -80,11 +165,24 @@
 		<!--------------------------------- CONTACT START ------------------------------>
 		
 				<div id="contact" style="display: none;">
-			    	<h1> Get in touch </h1> 
-			    	<p>
-						If you have any questions, please feel free to drop me an email. If you don't get an answer immediately, I might just be spending quality time with my family. <br>I'll get back to you as soon as I can. That's a promise!
-			    	</p>
-			    	<button onclick="showLandingOnly()"> HOME </button>
+
+						<!-- Side Bar -->
+							<div class="sidenav">
+									<a href="#" onclick="showLandingOnly()"> <i class="fas fa-home p-2"></i> </a>
+									<a href="#" onclick="showAboutOnly()"> <i class="fas fa-user-circle p-2"></i>  </a> 
+									<a href="#" onclick="showPortfolioOnly()"> <i class="fas fa-folder-open p-2"></i> </a> 
+									<a href="#" onclick="showContactOnly()"> <i class="fas fa-envelope text-purple p-2"></i> </a> 
+							</div>
+						<!-- Side Bar -->
+
+						<!-- Main Content -->
+							<div class="content">
+
+						    	<h1> Get in touch </h1> 
+						    	<p>
+									If you have any questions, please feel free to drop me an email. If you don't get an answer immediately, I might just be spending quality time with my family. <br>I'll get back to you as soon as I can. That's a promise!
+						    	</p>
+			    			</div> 
 		    	</div>  
 
 		<!--------------------------------- CONTACT END ---------------------------------->  	
@@ -129,11 +227,26 @@
 		}
 
 		function showLandingOnly() {
-		  document.getElementById("landing").style.display = "block";
+		  document.getElementById("landing").style.display = "flex";
 		  document.getElementById("home").style.display = "none";
 		  document.getElementById("about").style.display = "none";
 		  document.getElementById("portfolio").style.display = "none";
 		  document.getElementById("contact").style.display = "none";
+		}
+
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}
+		  slides[slideIndex-1].style.display = "block";
+		  setTimeout(showSlides, 2000); // Change image every 2 seconds
 		}
 	</script>
 

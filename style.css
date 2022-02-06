@@ -9,32 +9,112 @@
 
 body {
 	background-color: #1C1B1A;
-	display: flex;
 	min-height: 100vh;
 }
 
+#home, #about, #portfolio, #contact {
+	color: #fff;
+}
+
+.text-purple {
+	color: #B026FF;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0%;
+    float: center;
+    display: inline-flex;
+    padding: 0;
+    margin-top: 10px;
+    overflow: auto;
+  }
+  .sidenav a {
+	text-align: center;
+	background-color: #302F2E;
+	height: 55px;
+	width: 60px;
+	border-radius: 10px;
+	font-size: 2em;
+	font-weight: bold;	
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+    }
+
+  div.content {
+  	width: 100%;
+  	margin: 100px 0;
+  	padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .sidenav {
+    width: 100px;
+    height: 100%;
+    margin-top: 0;
+    position: fixed;
+    top: 40%;
+    left: 0%;
+    text-align: center;
+  }
+
+  .sidenav a {
+      background-color: #302F2E;
+      height: 55px;
+      width: 60px;
+      border-radius: 10px;
+      font-size: 2em;
+      margin-bottom: 5px;
+      padding: 5px;
+      font-weight: bold;	
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+    }
+
+  div.content {
+  	display: block;
+  	margin-left: 100px;
+  	margin-top: 100px;
+  	margin-bottom: 100px;
+  	padding: 0 20px;
+  	min-height: 100vh;
+  }
+}
+
+
 /* ----------------------------- LANDING PAGE --------------------------- */
 
-ul {
+
+#landing {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#landing ul {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
-ul li {
+#landing ul li {
 	list-style: none;
-	/*text-decoration: none;
-	position: relative;
-	display: block;
-	margin: 10px 0;
-	font-size: 4em;
-	font-weight: bold;
-	color: #fff;
-	transition: 0.2s;*/
 }
 
-ul li a {
+#landing ul li a {
 	text-decoration: none;
 	position: relative;
 	display: inline-block;
@@ -69,11 +149,75 @@ ul li:hover ~ .cursor {
 
 /* ----------------------------- HOME -------------------------------- */
 
-#home, #about, #portfolio, #contact {
-	color: #fff;
+.home-ok  {
+	border-radius: 50%;
+	background-color: #B026FF;
+	width: 100px;
+	height: 100px;
+	align-items: center
 }
 
-.text-purple {
-	color: #B026FF;
-	font-weight: bold;
+.back {
+	width: 115px;
+	height: 115px;
+	border-radius: 50%;
+	border-width: 2px;
+	border-color: white;
+	border-style: solid;
+	background: none;
+	padding: 5px;
+}
+
+
+/* ----------------------------- ABOUT -------------------------------- */
+
+.about-pics {
+	text-align: center;
+	margin: auto;
+	position: relative;
+	padding: 15px;
+}
+
+.about-img {
+	border-radius: 50%;
+	background-color: #B026FF;
+	width: 150px;
+	height: 150px;
+	align-items: center
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/*----- TEST ---------*/
+
+.navbar {
+	text-align: center;
+	padding: 10px;
+	height: 30px;
+}
+
+.main {
+	text-align: center;
+	padding: 100px;
 }
