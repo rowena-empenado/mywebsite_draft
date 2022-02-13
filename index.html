@@ -29,7 +29,7 @@
 
 		<!---------------------------- LANDING PAGE START ----------------------->
 		
-				<div id="landing" style="display: none;" class="">
+				<div id="landing" style="display: flex;" class="">
 			    	<ul>
 			    		<li> <a href="#" onclick="showHomeOnly()"> HOME </a> </li>
 			    		<li> <a href="#" onclick="showAboutOnly()"> ABOUT  </a> </li>
@@ -44,7 +44,7 @@
 
 		<!--------------------------------- HOME START -------------------------------->
 		
-				<div id="home" class="" style="display: block;">
+				<div id="home" class="" style="display: none;">
 
 						<!-- Side Bar -->
 							<div class="sidenav  ">
@@ -67,6 +67,7 @@
 								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<img class="w-25" src="./images/hi.gif">
 								<h3 class="text-center "> <i class="fas fa-gift text-purple"></i> <h3>
 								<h3> Feel free to roam around through the icons on the left side. </h3>
 								<h3> I hope you enjoy your time. </h3>
@@ -127,26 +128,53 @@
 								<div class="other-tools"></div>
 								<h4> You can also check my portfolio to see my progress as a Full Stack Web Developr. </h4>
 								<h2> Fun Facts </h2>
-									<div> 
-										<img src=""> 
-										<h4> I enjoy touching our dogs' nose and ears (especially when they are wet and cold). </h4>	
+								<div id="carouselExampleFade" class="w-md-75 carousel slide carousel-fade offset-md-2 col-md-8" data-ride="carousel">
+									<div class="carousel-inner w-md-75 ">
+										<div class="card  carousel-item active" >
+										  <img src="./images/nose.jpg" class="  card-img-top" alt="...">
+										  <div class="card-body">
+										    <p class="card-text">I enjoy touching our dogs' nose and ears (especially when they are wet and cold).</p>
+										  </div>
+										</div>
+
+										<div class="card  carousel-item" >
+										  <img src="./images/bubble.jpg" class=" card-img-top" alt="...">
+										  <div class="card-body">
+										    <p class="card-text">I like popping bubble wraps. It's a stress-reliever!</p>
+										  </div>
+										</div>
+
+										<div class="card  carousel-item" >
+										  <img src="./images/pexels-dids.jpg" class="  card-img-top" alt="...">
+										  <div class="card-body">
+										    <p class="card-text">I splurge on notebooks (with unique cover) and colored ballpens. I'm always tempted to buy these whenever I'm inside a school supplies store.</p>
+										  </div>
+										</div>
+
+										<div class="card  carousel-item" >
+										  <img src="./images/pexels-karolina-grabowska.jpg" class="  card-img-top" alt="...">
+										  <div class="card-body">
+										    <p class="card-text">I declutter my things every now and then to reset my mind. Less is truly more. </p>
+										  </div>
+										</div>
+										
+										<div class="card  carousel-item" >
+										  <img src="./images/climb.jpg" class=" card-img-top" alt="...">
+										  <div class="card-body">
+										    <p class="card-text">I enjoy climbing mountains. My favorite is Mt. Pulag. I've been there twice already.  </p>
+										  </div>
+										</div>
+
+										<button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+										    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										    <span class="sr-only">Previous</span>
+										  </button>
+										  <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+										    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+										    <span class="sr-only">Next</span>
+										  </button>
 									</div>
-									<div> 
-										<img src=""> 
-										<h4> I like popping bubble wraps. It's a stress-reliever! </h4>	
-									</div>
-									<div> 
-										<img src=""> 
-										<h4> I splurge on notebooks (with unique cover) and colored ballpens. I'm always tempted to buy these whenever I'm inside a school supplies store. </h4>	
-									</div>
-									<div> 
-										<img src=""> 
-										<h4> I declutter my things every now and then to reset my mind. Less is truly more. </h4>	
-									</div>
-									<div> 
-										<img src=""> 
-										<h4> I enjoy climbing mountains and chasing waterfalls. </h4>	
-									</div>
+								</div>
 							</div>
 						<!-- Main Content -->
 
@@ -175,6 +203,55 @@
 							    	<p>
 							    		Here's a list of projects that I've worked on since I started my journey as a <span class="text-purple"> Full Stack Web Developer </span> .
 							    	</p>
+
+							    	<div class="accordion offset-md-3 col-md-6 " id="accordionExample">
+							    	  <div class="card ">
+							    	    <div class="card-header" id="headingOne">
+							    	      <h2 class="mb-0">
+							    	        <div class="text-center" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							    	          <img class=" img-fluid w-50" src="./images/placeholder.png">
+							    	        </div>
+							    	      </h2>
+							    	    </div>
+
+							    	    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+							    	      <div class="card-body">
+							    	        <h4> Developer Portfolio </h4>
+							    	        <p class="text-muted"> Our Capstone 1 project. This is the very first website that I built from scratch using HTML, CSS, and Bootstrap. </p>
+							    	      </div>
+							    	    </div>
+							    	  </div>
+							    	  <div class="card">
+							    	    <div class="card-header" id="headingTwo">
+							    	      <h2 class="mb-0">
+							    	        <div class="text-center" role="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							    	          <img class=" img-fluid w-50" src="./images/placeholder.png">
+							    	        </div>
+							    	      </h2>
+							    	    </div>
+							    	    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+							    	      <div class="card-body">
+							    	        <h4> Placeholder title </h4>
+							    	        <p class="text-muted"> Our Capstone 2 project. This website/app is ......... and was built using JavaScript, MongoDB, etc. </p>
+							    	      </div>
+							    	    </div>
+							    	  </div>
+							    	  <div class="card">
+							    	    <div class="card-header" id="headingThree">
+							    	      <h2 class="mb-0">
+							    	        <div class="text-center" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							    	          <img class=" img-fluid w-50" src="./images/placeholder.png">
+							    	        </div>
+							    	      </h2>
+							    	    </div>
+							    	    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							    	      <div class="card-body">
+							    	        <h4> Placeholder title </h4>
+							    	        <p class="text-muted"> Our Capstone 3 project. This website/app is ......... and was built using JavaScript, MongoDB, etc. </p>
+							    	      </div>
+							    	    </div>
+							    	  </div>
+							    	</div>
 			    	
 		    				</div>
 		    			<!-- Main Content -->
@@ -278,3 +355,5 @@
 
 	</body>
 </html>
+
+

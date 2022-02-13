@@ -4,11 +4,11 @@
 	box-sizing: border-box;
 	font-family: 'Baloo Chettan 2', cursive;
 	justify-content: center;
-	align-items: center;
+	
 }
 
 body {
-	background-color: #D198B7;
+	background-color: #fff;
 	min-height: 100vh;
 }
 
@@ -17,13 +17,13 @@ body {
 }
 
 .text-purple {
-	color: #B026FF;
+	color: #c996cc;
 	font-weight: bold;
 }
 
 @media screen and (max-width: 700px) {
   .sidenav {
-  	background-color: #7A1E34;
+  	background-color: #fff;
     width: 100%;
     height: auto;
     position: fixed;
@@ -33,10 +33,11 @@ body {
     padding: 10px;
     margin-top: 0px;
     overflow: auto;
+    align-items: center;
   }
   .sidenav a {
 	text-align: center;
-	background-color: #302F2E;
+	background-color: #1c0c5b;
 	height: 55px;
 	width: 60px;
 	border-radius: 10px;
@@ -58,7 +59,7 @@ body {
 
 @media screen and (min-width: 701px) {
   .sidenav {
-  	background-color: #7A1E34;
+  	background-color: #fff;
     width: 100px;
     height: 100%;
     top: 0%;
@@ -69,6 +70,7 @@ body {
     display: flex;
     flex-direction: column;
     vertical-align: middle;
+    align-items: center;
   }
 
   /*.sidenav > div {
@@ -79,7 +81,7 @@ body {
 
   .sidenav a {
   		vertical-align: middle;
-      background-color: #302F2E;
+      background-color: #1c0c5b;
       top: 50%;
       height: 55px;
       width: 60px;
@@ -220,7 +222,16 @@ ul li:hover ~ .cursor {
   to {opacity: 1}
 }
 
+#carouselExampleFade {
+	text-align: center;
+	margin: auto;
+	position: relative;
+	/*width: 50%;*/
+}
 
+/*.btn-link {
+	border-color: red;
+}*/
 
 /*/*----- TEST ---------*/
 
